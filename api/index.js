@@ -20,5 +20,3 @@ app.use('/api/auth', authRouter)
 app.listen(3000, () => {
   console.log('server run on 3000')
 })
-
-// mongodb+srv://imgofakr:<password>@mern-estate.dhimo9k.mongodb.net/?retryWrites=true&w=majority
