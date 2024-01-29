@@ -7,7 +7,7 @@ export const auth = async (req, res, next) => {
   const newUser = new User({ username, email, password: hashPassword })
   try {
     await newUser.save()
-    res.status(201).json({ msg: 'created user' })
+    res.status(201).json({ msg: 'User Created' })
   } catch (err) {
     next(err)
   }
